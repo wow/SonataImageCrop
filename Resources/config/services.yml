@@ -1,0 +1,3 @@
+services:
+    wow.image_crop.request_handler_provider:
+        class: Wow\SonataImageCropBundle\Request\RequestHandlerProvider

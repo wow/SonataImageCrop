@@ -1,0 +1,25 @@
+{
+    "name": "wow/sonata-image-crop",
+	"type": "symfony-bundle",
+	"keywords": ["sonata","images", "panel", "ckeditor", "crop", "upload"],
+    "license": "MIT",
+    "description": "Symfony bundle that adds a page and modal popup to the sonata admin that lets you upload, crop, and browse images",
+    "authors": [
+        {
+            "name": "ilham Deneri",
+			"email": "ilhamdeneri@gmail.com"
+        }
+    ],
+	"autoload": {
+        "psr-4": { "Wow\\SonataImageCropBundle\\": "" }
+    },
+	"require": {
+        "php": ">=5.5.9"
+    },
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/wow/SonataImageCrop"
+		}
+	]
+}

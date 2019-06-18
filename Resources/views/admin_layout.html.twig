@@ -1,0 +1,28 @@
+{% extends 'SonataAdminBundle::standard_layout.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+	<link type="text/css" rel="stylesheet" href="{{asset('bundles/wowsonataimagecrop/css/cropper/cropper.min.css')}}" />
+	<link type="text/css" rel="stylesheet" href="{{asset('bundles/wowsonataimagecrop/css/modal-image.css')}}" />
+	<link type="text/css" rel="stylesheet" href="{{asset('bundles/wowsonataimagecrop/css/image-panel.css')}}" />
+{% endblock %}
+
+{% block javascripts %}    {{ parent() }}
+	
+	<script src="{{asset('bundles/wowsonataimagecrop/js/cropper/cropper.min.js')}}"></script>
+	<script src="{{asset('bundles/wowsonataimagecrop/js/modal-image.js')}}"></script>
+	<script src="{{asset('bundles/wowsonataimagecrop/js/image-panel.js')}}"></script>
+    <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
+{% endblock %}
+
+
+{% block side_bar_after_nav %}
+	{% if app.security.token and is_granted('ROLE_SONATA_ADMIN') %}
+	<li id="image-panel-dashboard-nav-item">
+		<a href="{{url('teaocha_image_panel_home')}}">
+			<i class="fa fa-camera"></i><span>Images</span>
+		</a>
+	</li>
+	{{ parent() }}
+	{% endif %}
+{% endblock %}
