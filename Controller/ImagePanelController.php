@@ -18,7 +18,7 @@ class ImagePanelController extends Controller
     {
         $admin_pool = $this->get('sonata.admin.pool');
 		
-		$imageHandler = $this->get('teaocha.image_panel.request_handler_provider')->getHandler();
+		$imageHandler = $this->get('wow.image_crop.request_handler_provider')->getHandler();
 		$images = $imageHandler->listImages();
         
         return array(
@@ -33,7 +33,7 @@ class ImagePanelController extends Controller
      */
     public function openModalImagePanelAction()
     {		
-		$imageHandler = $this->get('teaocha.image_panel.request_handler_provider')->getHandler();
+		$imageHandler = $this->get('wow.image_crop.request_handler_provider')->getHandler();
 		$images = $imageHandler->listImages();
         
         return array(
@@ -46,7 +46,7 @@ class ImagePanelController extends Controller
      */
     public function ckeditorImagePanelAction()
     {		
-		$imageHandler = $this->get('teaocha.image_panel.request_handler_provider')->getHandler();
+		$imageHandler = $this->get('wow.image_crop.request_handler_provider')->getHandler();
 		$images = $imageHandler->listImages();
         
         return array(

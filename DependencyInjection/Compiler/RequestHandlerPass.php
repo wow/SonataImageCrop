@@ -11,7 +11,7 @@ class RequestHandlerPass implements CompilerPassInterface
 	public function process(ContainerBuilder $container)
     {
         $definition = $container->findDefinition(
-            'teaocha.image_panel.request_handler_provider'
+            'wow.image_crop.request_handler_provider'
         );
 
         $taggedServices = $container->findTaggedServiceIds(

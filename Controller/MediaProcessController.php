@@ -21,7 +21,7 @@ class MediaProcessController extends Controller
 			return $response;
 		}
 		
-		$imageHandler = $this->get('teaocha.image_panel.request_handler_provider')->getHandler();
+		$imageHandler = $this->get('wow.image_crop.request_handler_provider')->getHandler();
 		
 		try{
 			$result = $imageHandler->imageUrlUpload($request->request->get('imageUrl'));
@@ -48,7 +48,7 @@ class MediaProcessController extends Controller
 		$imageData = $request->request->get('image');
 		$contentType = $request->request->get('contentType');
 		
-		$imageHandler = $this->get('teaocha.image_panel.request_handler_provider')->getHandler();
+		$imageHandler = $this->get('wow.image_crop.request_handler_provider')->getHandler();
 		
 		try{	
 			$result = $imageHandler->imageUpload($imageData, $contentType);
@@ -67,7 +67,7 @@ class MediaProcessController extends Controller
 
 	public function deleteImageAction($id) {
 	
-		$imageHandler = $this->get('teaocha.image_panel.request_handler_provider')->getHandler();
+		$imageHandler = $this->get('wow.image_crop.request_handler_provider')->getHandler();
 		
 		try{
 			$result = $imageHandler->deleteImage($id);
