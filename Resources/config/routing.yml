@@ -1,6 +1,6 @@
 teaocha_image_panel_home:
     path: /admin/images
-    defaults: {_controller: 'WowSonataImageCropPanelBundle:ImagePanel:index'}
+    defaults: {_controller: 'WowSonataImageCropBundle:ImagePanel:index'}
 
 teaocha_image_panel_modal:
     path: /admin/images/modal
