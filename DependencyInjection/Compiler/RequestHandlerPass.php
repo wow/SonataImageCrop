@@ -15,7 +15,7 @@ class RequestHandlerPass implements CompilerPassInterface
         );
 
         $taggedServices = $container->findTaggedServiceIds(
-            'teaocha.image_panel.request_handler'
+            'wow.image_crop.request_handler'
         );
 		
 		if (count($taggedServices) === 0) {
