@@ -1,10 +1,10 @@
 <?php
 
-namespace Wow\SonataImageCropBundleBundle;
+namespace Wow\SonataImageCropBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Wow\SonataImageCropBundleBundle\DependencyInjection\Compiler\RequestHandlerPass;
+use Wow\SonataImageCropBundle\DependencyInjection\Compiler\RequestHandlerPass;
 
 /**
  * Bundle.

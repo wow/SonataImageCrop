@@ -1,6 +1,6 @@
 <?php
 
-namespace Wow\SonataImageCropBundleBundle\Request;
+namespace Wow\SonataImageCropBundle\Request;
 
 class RequestResult
 {

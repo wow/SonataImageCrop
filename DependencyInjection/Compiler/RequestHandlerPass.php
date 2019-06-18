@@ -1,6 +1,6 @@
 <?php
 
-namespace Wow\SonataImageCropBundleBundle\DependencyInjection\Compiler;
+namespace Wow\SonataImageCropBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Wow\SonataImageCropBundleBundle\DependencyInjection;
+namespace Wow\SonataImageCropBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
